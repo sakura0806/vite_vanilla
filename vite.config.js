@@ -3,7 +3,7 @@ const { defineConfig } = require('vite')
 
 module.exports = defineConfig({
   base: './',
-  // publicPath: process.env.NODE_ENV === 'production' ? '/vite_vanilla/' : './',
+  publicPath: process.env.NODE_ENV === 'production' ? '/vite_vanilla/' : './',
   resolve: {
     alias: {
       '/@/': resolve(__dirname, './src/'),
